@@ -1,1 +1,16 @@
-hELLOU
+Console.Write("Введите 2 числа:");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int numberB = Convert.ToInt32(Console.ReadLine());
+if( numberA > numberB)
+{
+Console.WriteLine("{0} Наибольшее число", numberA);
+}
+    else 
+    if( numberA < numberB)
+    {
+    Console.WriteLine("{0} Наибольшее число", numberB);
+    }
+    else 
+    {
+    Console.WriteLine("Числа одинаковые");
+    }
