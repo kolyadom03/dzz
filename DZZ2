@@ -1,8 +1,18 @@
-Console.Write("Введите 3 числа");
+Console.Write("Введите любое число");
 int numberA = Convert.ToInt32(Console.ReadLine());
-int numberB = Convert.ToInt32(Console.ReadLine());
-int numberC = Convert.ToInt32(Console.ReadLine());
-int max = numberA;
-if (max < numberB) max = numberB;
-if (max < numberC) max = numberC;
-Console.WriteLine("{0} максимальное число", max);
+if (numberA < 100 )
+Console.WriteLine("3 числа не существует");
+if(numberA > 99)
+{
+    if(numberA < 1000)
+    {
+        int numberC = numberA % 10;
+        Console.WriteLine(numberC);
+    }
+}
+if(numberA > 999)
+    Console.Write(numberA.ToString().Reverse().ToArray());
+    int numberB = numberA / 10000;
+    Console.Write(numberB.ToString().Reverse().ToArray());
+    int numberD = numberB / 100;
+    Console.WriteLine("() искомое число",numberD);
