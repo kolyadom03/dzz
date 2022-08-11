@@ -10,9 +10,7 @@ if(numberA > 99)
         Console.WriteLine(numberC);
     }
 }
-if(numberA > 999)
-    Console.Write(numberA.ToString().Reverse().ToArray());
-    int numberB = numberA / 10000;
-    Console.Write(numberB.ToString().Reverse().ToArray());
-    int numberD = numberB / 100;
-    Console.WriteLine("() искомое число",numberD);
+      while(numberA >= 999)
+            int numberA = numberA / 10;
+        int numberK = numberA % 10;
+    Console.WriteLine(numberK);
