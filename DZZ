@@ -1,11 +1,6 @@
-Console.Write("Введите трехзначное число:");
-int number = Convert.ToInt32(Console.ReadLine());
-if(number > 99)
-{
-    if(number < 1000)
-    {
-        int number2 =  number / 10;
-        int number3 = number2 % 10;
-        Console.WriteLine(number3);
-    }
-}
+Console.WriteLine("Введите 5-значное число");
+string numberA = Convert.ToString(Console.ReadLine());
+if(numberA[0] == numberA[4] && numberA[1] == numberA[3])
+Console.WriteLine("это число палиндром");
+else
+Console.WriteLine("это число не палиндром");
