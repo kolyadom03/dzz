@@ -1,33 +1,17 @@
-Console.Write("Введите число:");
-int numberA = Convert.ToInt32(Console.ReadLine());
-if (numberA > 8)
-Console.WriteLine("Такого дня недели не существует");
-else
-    if(numberA == 1)
-    {
-        Console.WriteLine("Понедельник");
-    }
-    else if(numberA == 2)
-    {
-        Console.WriteLine("Вторник");
-    }
-    else if(numberA == 3)
-    {
-        Console.WriteLine("Среда");
-    }
-    else if(numberA == 4)
-    {
-        Console.WriteLine("Четверг");
-    }
-    else if(numberA == 5)
-    {
-        Console.WriteLine("Пятница");
-    }
-    else if(numberA == 6)
-    {
-        Console.WriteLine("Суббота-выходной");
-    }
-    else if(numberA == 7)
-    {
-        Console.WriteLine("Воскресенье-выходной");
-    }
+int x1 = ReadInt("Введите x точки A:");
+int y1 = ReadInt("Введите y точки A:");
+int z1 = ReadInt("Введите z точки A:");
+int x2 = ReadInt("Введите x точки B:");
+int y2 = ReadInt("Введите y точки B:");
+int z2 = ReadInt("Введите z точки B:");
+int lengthX = x2 - x1;
+int lengthY = y2 - y1;
+int lengthZ = z2 - z1;
+double distance = Math.Sqrt(lengthX * lengthX + lengthY * lengthY + lengthZ * lengthZ);
+Console.WriteLine(distance);
+
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
