@@ -1,16 +1,14 @@
-Console.Write("Введите любое число");
-int numberA = Convert.ToInt32(Console.ReadLine());
-if (numberA < 100 )
-Console.WriteLine("3 числа не существует");
-if(numberA > 99)
+int Input = ReadInt("Введите число");
+int Count = 1;
+while(Count <= Input)
 {
-    if(numberA < 1000)
-    {
-        int numberC = numberA % 10;
-        Console.WriteLine(numberC);
-    }
+    Console.Write(Count*Count*Count + ", ");
+    Count++;
 }
-      while(numberA >= 999)
-            int numberA = numberA / 10;
-        int numberK = numberA % 10;
-    Console.WriteLine(numberK);
+
+
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
